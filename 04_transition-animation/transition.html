@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans KR', serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col gap-y-4 items-center justify-center">
+    <!-- Transition 미적용 -->
+    <button
+      class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+    >
+      Hover me
+    </button>
+    <!-- Transition 적용 -->
+    <button
+      class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-500"
+    >
+      Hover me
+    </button>
+  </body>
+</html>
