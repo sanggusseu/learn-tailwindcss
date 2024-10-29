@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans KR', serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'regal-blue': '#243c5a',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="p-2 mb-4">
+      <h1 class="text-4xl font-bold mb-3">Font-size</h1>
+      <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+      <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+      <p class="text-base">Lorem ipsum dolor sit amet.</p>
+      <p class="text-lg">Lorem ipsum dolor sit amet.</p>
+      <p class="text-xl">Lorem ipsum dolor sit amet.</p>
+      <p class="text-2xl">Lorem ipsum dolor sit amet.</p>
+      <p class="text-3xl">Lorem ipsum dolor sit amet.</p>
+      <p class="text-[2rem]">Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="p-2 mb-4">
+      <h1 class="text-4xl font-bold mb-3">Font-weight</h1>
+      <p class="text-xs font-thin">Lorem ipsum dolor sit amet.</p>
+      <p class="text-sm font-extralight">Lorem ipsum dolor sit amet.</p>
+      <p class="text-base font-light">Lorem ipsum dolor sit amet.</p>
+      <p class="text-lg font-normal">Lorem ipsum dolor sit amet.</p>
+      <p class="text-xl font-medium">Lorem ipsum dolor sit amet.</p>
+      <p class="text-2xl font-semibold">Lorem ipsum dolor sit amet.</p>
+      <p class="text-3xl font-bold">Lorem ipsum dolor sit amet.</p>
+      <p class="text-[2rem] font-extrabold">Lorem ipsum dolor sit amet.</p>
+      <p class="text-[2.5rem] font-black">Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="p-2 mb-4">
+      <h1 class="text-4xl font-bold mb-3">Font-align</h1>
+      <p class="text-3xl font-bold text-left">Lorem ipsum dolor sit amet.</p>
+      <p class="text-[2rem] font-extrabold text-center">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-[2.5rem] font-black text-right">
+        Lorem ipsum dolor sit amet.
+      </p>
+    </section>
+    <section class="p-2 mb-4">
+      <h1 class="text-4xl font-bold mb-3">Line-height</h1>
+      <p class="text-lg font-normal leading-none">
+        Lorem ipsum dolor sit amet.<br />
+        Lorem ipsum dolor sit amet.
+      </p>
+      <hr />
+      <p class="text-lg font-normal leading-normal">
+        Lorem ipsum dolor sit amet.<br />
+        Lorem ipsum dolor sit amet.<br />
+      </p>
+      <hr />
+      <p class="text-lg font-normal leading-loose">
+        Lorem ipsum dolor sit amet.<br />
+        Lorem ipsum dolor sit amet.
+      </p>
+    </section>
+    <section class="p-2 mb-4">
+      <h1 class="text-4xl font-bold mb-3">Text-color</h1>
+      <p class="text-xs font-thin text-red-500">Lorem ipsum dolor sit amet.</p>
+      <p class="text-sm font-extralight text-green-500">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-base font-light text-blue-500">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-lg font-normal text-blue-600/50">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-lg font-normal text-blue-600/[.1]">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-xl font-medium text-red-500 hover:text-blue-500">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-2xl font-semibold text-red-500 md:text-blue-500">
+        Lorem ipsum dolor sit amet.
+      </p>
+      <p class="text-3xl font-bold text-regal-blue">
+        Lorem ipsum dolor sit amet.
+      </p>
+    </section>
+  </body>
+</html>
