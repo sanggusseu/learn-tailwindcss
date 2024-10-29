@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Noto Sans KR', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-gray-100 p-6 rounded-lg mb-6">
+      <nav class="flex justify-between items-center">
+        <!-- 좌측: 로고 -->
+        <div class="text-2xl font-bold">MyWebsite</div>
+
+        <!-- 중앙: 네비게이션 링크 -->
+        <ul class="flex gap-4">
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+          </li>
+        </ul>
+
+        <!-- 우측: 로그인 버튼 -->
+        <div>
+          <button
+            type="button"
+            class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+          >
+            Login
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
